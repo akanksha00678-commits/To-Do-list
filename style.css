@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Input */
+#todo-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+#todo-input:focus {
+    border-color: #007bff;
+}
+
+/* Add Button */
+#add-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background-color 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Todo List */
+#todo-list {
+    list-style: none;
+    width: 70%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+/* Todo Item */
+#todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Checkbox */
+#todo-list input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Todo Text */
+#todo-list span {
+    flex: 1;
+    text-align: left;
+    margin: 0 15px;
+    word-break: break-word;
+    font-size: 16px;
+}
+
+/* Delete Button */
+#todo-list button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#todo-list button:hover {
+    background-color: #b02a37;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    #todo-input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #add-btn {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    #todo-list {
+        width: 95%;
+    }
+}
